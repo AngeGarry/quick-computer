@@ -8,10 +8,10 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
     if (isset($_SESSION["statut"]) === 1) {
         header("location: View/index.php");
         exit;
-    }
-    else
-    header("location: index.php");
+    }    
 }
+else
+header("location: index.php");
 
 
 if (isset($_POST["submit"])) {
